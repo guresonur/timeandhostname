@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hostname-timestamp
+spec:
+  type: LoadBalancer
+  externalTrafficPolicy: Local
+  selector:
+    app: hostname-timestamp
+  ports:
+  - nodePort: 32000
+    port: 8080
