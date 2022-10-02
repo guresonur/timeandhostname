@@ -8,17 +8,11 @@ import (
 )
 
 func main() {
-	//Get Host address & Port information from the environment variables.
-	//If not set, default address & port is set.
-	host := os.Getenv("HOST")
-	port := os.Getenv("PORT")
-	if host == "" {
-		host = "localhost"
-	}
-	if port == "" {
-		port = ":8080"
-	}
-	address := host + port
+	//Setting Host address & Port information.
+	port := ":8080"
+
+	//This request can come to any interface, hence setting 0.0.0.0
+	address := "0.0.0.0" + port
 	http.HandleFunc("/", handler)
 
 	//Starting web server here, if there is an error, going to be dealt
