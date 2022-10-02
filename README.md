@@ -39,5 +39,7 @@ Open your web browser and hit the `http://127.0.0.1:8080`
 --- 
 
 If you want to build Go application to run on local without containerization:
+
 `go build -o main`
+
 `./main`
