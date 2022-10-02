@@ -4,6 +4,14 @@ This application returns hostname and current time of the environment that conta
 
 Application can function on any Kubernetes environment, but i will share details how to run on Minikube.
 
+Installation of Minikube:
+
+`curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64`
+
+`sudo install minikube-darwin-amd64 /usr/local/bin/minikube`
+
+Further details for Minikube installation https://minikube.sigs.k8s.io/docs/start/
+
 Docker container image can be built seperately. I have already built and pushed to the following:
 
 `guresonur/wtitawithn` (you can directly pull the image as it is public in Dockerhub)
